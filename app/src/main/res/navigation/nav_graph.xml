@@ -7,7 +7,7 @@
         android:id="@+id/onboardingFragment"
         android:name="com.elif.presentation.onboarding.OnboardingFragment"
         android:label="Onboarding" />
-
+<!--
     <fragment
         android:id="@+id/paywallFragment"
         android:name="com.elif.presentation.home.HomeFragment"
@@ -16,5 +16,5 @@
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.elif.presentation.paywall.PaywallFragment"
-        android:label="Paywall" />
+        android:label="Paywall" />-->
 </navigation>
