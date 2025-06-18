@@ -39,17 +39,21 @@ buildscript {
 }
 
 dependencies {
+    implementation(project(":domain"))
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
     implementation(libs.androidx.navigation.fragment.ktx)
     implementation(libs.androidx.lifecycle.livedata.ktx)
-    implementation(project(":domain"))
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     implementation(libs.hilt.android.gradle.plugin)
     implementation(libs.hilt.android)
     kapt(libs.hilt.android.compiler)
+    implementation(libs.glide)
+    kapt(libs.hilt.compiler)
+    implementation (libs.hilt.android.v251)
+    kapt (libs.androidx.hilt.compiler)
 }

@@ -28,5 +28,10 @@
     <string name="terms_privacy_restore">Terms · Privacy · Restore</string>
     <string name="after_the_3_day_free_trial_period_you_ll_be_charged_274_99_per_year_unless_you_cancel_before_the_trial_expires_yearly_subscription_is_auto_renewable">After the 3-day free trial period you’ll be charged ₺274.99 per year unless you \ncancel before the trial expires. Yearly Subscription is Auto-Renewable</string>
 
-
+    <!-- Home -->
+    <string name="hi_plant_lover">Hi, plant lover!</string>
+    <string name="good_afternoon">Good Afternoon! ☁️</string>
+    <string name="search_for_plants">Search for plants</string>
+    <string name="free_premium_available_ntap_to_upgrade_your_account">FREE Premium Available\nTap to upgrade your account!</string>
+    <string name="how_to_identify_plants_easily_with_plantapp">How to identify plants easily with PlantApp?</string>
 </resources>
