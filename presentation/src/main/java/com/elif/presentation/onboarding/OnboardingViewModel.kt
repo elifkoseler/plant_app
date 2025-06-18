@@ -1,9 +1,33 @@
 package com.elif.presentation.onboarding
 
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MediatorLiveData
+import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.elif.presentation.R
 
 class OnboardingViewModel : ViewModel() {
+
+    private val _currentIndex = MutableLiveData(0)
+    val currentIndex: LiveData<Int> = _currentIndex
+
+    private val _currentStep = MediatorLiveData<OnboardingStep>().apply {
+        addSource(_currentIndex) { index ->
+            value = steps.getOrNull(index)
+        }
+    }
+    val currentStep: LiveData<OnboardingStep> = _currentStep
+
+    fun nextStep(): Boolean {
+        val next = (_currentIndex.value ?: 0) + 1
+        return if (next < steps.size) {
+            _currentIndex.value = next
+            true
+        } else {
+            false
+        }
+    }
+
     private val steps = listOf(
         OnboardingStep(
             titleRes = R.string.welcome_to_plantapp,
