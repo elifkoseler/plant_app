@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.elif.domain"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.elif.domain"
