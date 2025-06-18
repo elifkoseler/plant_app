@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/presentation_nav_graph"
+    app:startDestination="@id/onboardingFragment">
+
+    <fragment
+        android:id="@+id/onboardingFragment"
+        android:name="com.elif.presentation.onboarding.OnboardingFragment"
+        android:label="Onboarding">
+        <action
+            android:id="@+id/action_onboardingFragment_to_paywallFragment"
+            app:destination="@id/paywallFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/paywallFragment"
+        android:name="com.elif.presentation.paywall.PaywallFragment"
+        android:label="Paywall">
+        <action
+            android:id="@+id/action_paywall_to_home"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/paywallFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.elif.presentation.home.HomeFragment"
+        android:label="Home" />
+</navigation>

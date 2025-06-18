@@ -7,14 +7,25 @@
         android:id="@+id/onboardingFragment"
         android:name="com.elif.presentation.onboarding.OnboardingFragment"
         android:label="Onboarding" />
-<!--
-    <fragment
-        android:id="@+id/paywallFragment"
-        android:name="com.elif.presentation.home.HomeFragment"
-        android:label="Home" />
 
     <fragment
-        android:id="@+id/homeFragment"
+        android:id="@+id/paywallFragment"
         android:name="com.elif.presentation.paywall.PaywallFragment"
-        android:label="Paywall" />-->
+        android:label="Paywall" />
+
+    <action
+        android:id="@+id/action_onboardingFragment_to_paywallFragment"
+        app:destination="@id/paywallFragment" />
+
+    <!--
+        <fragment
+            android:id="@+id/paywallFragment"
+            android:name="com.elif.presentation.home.HomeFragment"
+            android:label="Home" />
+
+        <fragment
+            android:id="@+id/homeFragment"
+            android:name="com.elif.presentation.paywall.PaywallFragment"
+            android:label="Paywall" />-->
 </navigation>
+

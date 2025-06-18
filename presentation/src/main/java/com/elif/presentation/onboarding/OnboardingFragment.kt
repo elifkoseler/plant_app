@@ -6,6 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
+import com.elif.presentation.R
 import com.elif.presentation.databinding.FragmentOnboardingBinding
 
 class OnboardingFragment : Fragment() {
@@ -33,6 +35,21 @@ class OnboardingFragment : Fragment() {
                 binding.descriptionText.setText(step.descriptionRes)
             } else {
                 binding.descriptionText.visibility = View.GONE
+                binding.brush.visibility = View.VISIBLE
+            }
+
+            if (step.sliderRes != null) {
+                binding.slider.visibility = View.VISIBLE
+                binding.slider.setImageResource(step.sliderRes)
+            } else {
+                binding.slider.visibility = View.GONE
+            }
+
+            if (step.termsStringRes != null) {
+                binding.termsText.visibility = View.VISIBLE
+                binding.termsText.setText(step.termsStringRes)
+            } else {
+                binding.termsText.visibility = View.GONE
             }
 
             binding.plantImage.setImageResource(step.imageRes)
@@ -43,7 +60,7 @@ class OnboardingFragment : Fragment() {
         binding.nextButton.setOnClickListener {
             val didAdvance = viewModel.nextStep()
             if (!didAdvance) {
-                //findNavController().navigate(R.id.action_onboarding_to_paywall)
+                findNavController().navigate(R.id.action_onboardingFragment_to_paywallFragment)
             }
         }
     }
