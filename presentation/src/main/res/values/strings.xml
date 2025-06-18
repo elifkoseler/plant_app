@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">presentation</string>
+
+    <!-- Onboarding -->
     <string name="welcome_to_plantapp">Welcome to <b>PlantApp</b></string>
     <string name="identify_more_than_3000_plants_and_88_accuracy">Identify more than 3000+ plants and 88% \naccuracy.</string>
     <string name="by_tapping_next_you_are_agreeing_to_plantid_nterms_of_use_privacy_policy">
@@ -10,5 +12,21 @@
     <string name="take_a_photo_to_identify">Take a photo to <b>identify</b> \nthe plant!</string>
     <string name="get_plant_care_guides">Get plant <b>care guides</b></string>
     <string name="continue_button">Continue</string>
+
+    <!-- Paywall -->
+    <string name="plantapp_premium"><b>PlantApp</b> Premium</string>
+    <string name="access_all_features">Access All Features</string>
+    <string name="try_free_for_3_days">Try free for 3 days</string>
+    <string name="unlimited">Unlimited</string>
+    <string name="plant_identify">Plant Identify</string>
+    <string name="faster">Faster</string>
+    <string name="process">Process</string>
+    <string name="_1_month">1 Month</string>
+    <string name="_2_99_month_auto_renewable">$2.99/month, auto renewable</string>
+    <string name="first_3_days_free_then_529_99_year">First 3 days free, then $529,99/year</string>
+    <string name="_1_year">1 Year</string>
+    <string name="terms_privacy_restore">Terms · Privacy · Restore</string>
+    <string name="after_the_3_day_free_trial_period_you_ll_be_charged_274_99_per_year_unless_you_cancel_before_the_trial_expires_yearly_subscription_is_auto_renewable">After the 3-day free trial period you’ll be charged ₺274.99 per year unless you \ncancel before the trial expires. Yearly Subscription is Auto-Renewable</string>
+
 
 </resources>

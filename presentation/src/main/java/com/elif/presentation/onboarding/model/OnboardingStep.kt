@@ -1,4 +1,4 @@
-package com.elif.presentation.onboarding
+package com.elif.presentation.onboarding.model
 
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes

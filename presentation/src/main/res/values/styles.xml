@@ -8,12 +8,47 @@
         <item name="android:textColor">@color/title_text_color</item>
     </style>
 
+    <style name="RobotoTitleWhite">
+        <item name="fontFamily">@font/robotoregular</item>
+        <item name="android:textSize">@dimen/text_28dp</item>
+        <item name="android:lineSpacingExtra">10sp</item>
+        <item name="android:textColor">@color/title_text_color_white</item>
+    </style>
 
+    <style name="RobotoTitleWhiteSmall">
+        <item name="fontFamily">@font/robotoregular</item>
+        <item name="android:textSize">@dimen/text_20dp</item>
+        <item name="android:lineSpacingExtra">10sp</item>
+        <item name="android:textColor">@color/title_text_color_white</item>
+    </style>
     <style name="RobotoDescription">
         <item name="fontFamily">@font/robotoregular</item>
         <item name="android:textSize">16sp</item>
         <item name="android:lineSpacingExtra">10sp</item>
         <item name="android:textColor">@color/title_text_color</item>
+    </style>
+
+    <style name="RobotoDescriptionWhite">
+        <item name="fontFamily">@font/robotoregular</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:lineSpacingExtra">10sp</item>
+        <item name="android:textFontWeight">300</item>
+        <item name="android:textColor">@color/title_text_color_white</item>
+    </style>
+
+    <style name="RobotoDescriptionWhiteSmall">
+        <item name="fontFamily">@font/robotoregular</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:lineSpacingExtra">10sp</item>
+        <item name="android:textFontWeight">300</item>
+        <item name="android:textColor">@color/title_text_color_white</item>
+    </style>
+
+    <style name="RobotoDescriptionWhiteSmallest">
+        <item name="fontFamily">@font/robotoregular</item>
+        <item name="android:textSize">9sp</item>
+        <item name="android:textFontWeight">300</item>
+        <item name="android:textColor">@color/title_text_color_white</item>
     </style>
 
     <style name="RobotoDescriptionSmall">

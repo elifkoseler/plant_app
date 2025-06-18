@@ -5,11 +5,11 @@ import androidx.lifecycle.MediatorLiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.elif.presentation.R
+import com.elif.presentation.onboarding.model.OnboardingStep
 
 class OnboardingViewModel : ViewModel() {
 
     private val _currentIndex = MutableLiveData(0)
-    val currentIndex: LiveData<Int> = _currentIndex
 
     private val _currentStep = MediatorLiveData<OnboardingStep>().apply {
         addSource(_currentIndex) { index ->
