@@ -2,6 +2,8 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
     id("com.google.dagger.hilt.android") version "2.56.2" apply false
+    id("kotlin-kapt")
+    id("dagger.hilt.android.plugin")
 }
 
 android {
@@ -48,4 +50,9 @@ dependencies {
     implementation(libs.androidx.navigation.ui.ktx)
     implementation(project(":presentation"))
     implementation(libs.androidx.core.ktx.v1120)
+    // Hilt core
+    implementation(libs.hilt.android.v251)
+    kapt(libs.hilt.compiler)
+    kapt(libs.androidx.hilt.compiler)
+    implementation(libs.androidx.hilt.navigation.fragment)
 }
