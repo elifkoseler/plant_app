@@ -1,8 +1,9 @@
 plugins {
     id("com.android.library")
     id("kotlin-android")
+    id("com.google.dagger.hilt.android")
+    id("kotlin-kapt")
 }
-
 
 android {
     namespace = "com.elif.presentation"
@@ -28,6 +29,13 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+
+}
+
+buildscript {
+    dependencies {
+        classpath(libs.hilt.android.gradle.plugin.v248)
+    }
 }
 
 dependencies {
@@ -37,7 +45,11 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.navigation.fragment.ktx)
     implementation(libs.androidx.lifecycle.livedata.ktx)
+    implementation(project(":domain"))
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    implementation(libs.hilt.android.gradle.plugin)
+    implementation(libs.hilt.android)
+    kapt(libs.hilt.android.compiler)
 }
