@@ -34,21 +34,27 @@ class OnboardingViewModel : ViewModel() {
             descriptionRes = R.string.identify_more_than_3000_plants_and_88_accuracy,
             imageRes = R.drawable.start_plant,
             backgroundImageRes = R.drawable.background,
-            buttonStringRes = R.string.get_started
+            buttonStringRes = R.string.get_started,
+            sliderRes = null,
+            termsStringRes = R.string.by_tapping_next_you_are_agreeing_to_plantid_nterms_of_use_privacy_policy
         ),
         OnboardingStep(
             titleRes = R.string.take_a_photo_to_identify,
             descriptionRes = null,
             imageRes = R.drawable.identify_plant,
             backgroundImageRes = R.drawable.background,
-            buttonStringRes = R.string.continue_button
+            buttonStringRes = R.string.continue_button,
+            sliderRes = R.drawable.slider_1,
+            termsStringRes = null
         ),
         OnboardingStep(
             titleRes = R.string.get_plant_care_guides,
             descriptionRes = null,
             imageRes = R.drawable.care_guides,
             backgroundImageRes = R.drawable.background,
-            buttonStringRes = R.string.continue_button
+            buttonStringRes = R.string.continue_button,
+            sliderRes = R.drawable.slider_2,
+            termsStringRes = null
         )
     )
 }

@@ -8,5 +8,7 @@ data class OnboardingStep(
     @StringRes val descriptionRes: Int?,
     @DrawableRes val imageRes: Int,
     @DrawableRes val backgroundImageRes: Int,
-    @StringRes val buttonStringRes: Int
+    @StringRes val buttonStringRes: Int,
+    @DrawableRes val sliderRes: Int?,
+    @StringRes val termsStringRes: Int?
 )

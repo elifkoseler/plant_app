@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">presentation</string>
-    <string name="welcome_to_plantapp">Welcome to PlantApp</string>
-    <string name="identify_more_than_3000_plants_and_88_accuracy">Identify more than 3000+ plants and 88% accuracy.</string>
-    <string name="by_tapping_next_you_are_agreeing_to_plantid_nterms_of_use_privacy_policy"><![CDATA[By tapping next, you are agreeing to PlantID\nTerms of Use & Privacy Policy.]]></string>
-    <string name="get_started">Get Started</string>
-    <string name="take_a_photo_to_identify">Take a photo to identify the plant!</string>
-    <string name="get_plant_care_guides">Get plant care guides</string>
+    <string name="welcome_to_plantapp">Welcome to <b>PlantApp</b></string>
+    <string name="identify_more_than_3000_plants_and_88_accuracy">Identify more than 3000+ plants and 88% \naccuracy.</string>
+    <string name="by_tapping_next_you_are_agreeing_to_plantid_nterms_of_use_privacy_policy">
+    By tapping next, you are agreeing to PlantID \n
+    <u>Terms of Use</u> &amp; <u>Privacy Policy</u>.
+</string>    <string name="get_started">Get Started</string>
+    <string name="take_a_photo_to_identify">Take a photo to <b>identify</b> \nthe plant!</string>
+    <string name="get_plant_care_guides">Get plant <b>care guides</b></string>
     <string name="continue_button">Continue</string>
 
 </resources>
