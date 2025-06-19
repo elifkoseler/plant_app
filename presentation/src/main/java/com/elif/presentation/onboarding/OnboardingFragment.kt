@@ -9,6 +9,7 @@ import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import com.elif.presentation.R
 import com.elif.presentation.databinding.FragmentOnboardingBinding
+import com.elif.presentation.utils.OnboardingPreferences
 
 class OnboardingFragment : Fragment() {
 
@@ -60,6 +61,7 @@ class OnboardingFragment : Fragment() {
         binding.nextButton.setOnClickListener {
             val didAdvance = viewModel.nextStep()
             if (!didAdvance) {
+                OnboardingPreferences.setCompleted(requireContext(), true)
                 findNavController().navigate(R.id.action_onboardingFragment_to_paywallFragment)
             }
         }

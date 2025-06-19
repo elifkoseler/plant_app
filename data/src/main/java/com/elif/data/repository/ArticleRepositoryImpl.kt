@@ -6,9 +6,9 @@ import com.elif.data.local.mapper.toEntity
 import com.elif.data.remote.ArticleApi
 import com.elif.domain.model.Article
 import com.elif.domain.repository.ArticleRepository
+import javax.inject.Inject
 
-
-class ArticleRepositoryImpl(
+class ArticleRepositoryImpl @Inject constructor(
     private val api: ArticleApi,
     private val dao: ArticleDao
 ) : ArticleRepository {
