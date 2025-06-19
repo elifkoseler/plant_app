@@ -34,7 +34,9 @@ This project follows **Clean Architecture** and the **MVVM (Model-View-ViewModel
 
 ## ⏱ Time Constraints & Effort
 Due to time limitations, I wasn’t able to fully complete or polish all parts of the app. However, I focused on building a **solid architectural foundation** and demonstrating my knowledge of modern Android development practices, including Clean Architecture and dependency injection.
-A significant portion of my time was spent dealing with **Hilt setup** and **Gradle-related configuration challenges**, which were particularly time-consuming. 
+
+A significant portion of my time was spent dealing with **Hilt setup** and **Gradle-related configuration challenges**, which were particularly time-consuming.
+
 This project reflects my understanding of these modern technologies and architectural patterns. I’ve also included a short **demo video** to showcase the current state of the app.
 The goal was not perfection under the time pressure, but to show my **hands-on capabilities and technical growth** in building scalable Android applications.
 
