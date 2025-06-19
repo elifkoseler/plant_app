@@ -28,6 +28,7 @@ This project follows **Clean Architecture** and the **MVVM (Model-View-ViewModel
 - **LiveData** – For reactive UI updates  
 - **Glide** – For efficient image loading and caching  
 - **FragmentContainerView** – Single-activity architecture with NavHostFragment
+- **Git + GitHub** – Actively used GitHub for version control with a clean Git workflow. Developed features in isolated feature branches, used pull requests (PRs) to track progress and maintain code quality.
 
 ---
 
