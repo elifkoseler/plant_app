@@ -1,30 +1,45 @@
 package com.elif.presentation.home
 
-import androidx.lifecycle.ViewModel
-import androidx.lifecycle.viewModelScope
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewModelScope
 import com.elif.domain.model.Article
 import com.elif.domain.usecase.ArticleUseCases
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
+import javax.inject.Inject
 
-class HomeViewModel(
+@HiltViewModel
+class HomeViewModel @Inject constructor(
     private val useCases: ArticleUseCases
 ) : ViewModel() {
 
     private val _articles = MutableLiveData<List<Article>>()
     val articles: LiveData<List<Article>> = _articles
 
+    init {
+        loadArticles()
+    }
+
     fun loadArticles() {
         viewModelScope.launch {
             try {
+                // Try to get from remote firsr
                 val remoteArticles = useCases.getArticlesFromRemote()
-                _articles.value = remoteArticles
+
+                // Save to room
                 useCases.saveArticlesToLocal(remoteArticles)
-            } catch (e: Exception) {
+
+                // Get from local
                 val localArticles = useCases.getArticlesFromLocal()
                 _articles.value = localArticles
+
+            } catch (e: Exception) {
+                // If there is an exception then get from local
+                _articles.value = useCases.getArticlesFromLocal()
             }
         }
     }
 }
+

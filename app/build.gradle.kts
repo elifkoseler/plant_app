@@ -38,6 +38,7 @@ android {
 }
 
 dependencies {
+    implementation(project(":presentation"))
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
@@ -48,7 +49,6 @@ dependencies {
     implementation(libs.hilt.android)
     implementation(libs.androidx.navigation.fragment.ktx)
     implementation(libs.androidx.navigation.ui.ktx)
-    implementation(project(":presentation"))
     implementation(libs.androidx.core.ktx.v1120)
     // Hilt core
     implementation(libs.hilt.android.v251)
@@ -56,3 +56,8 @@ dependencies {
     kapt(libs.androidx.hilt.compiler)
     implementation(libs.androidx.hilt.navigation.fragment)
 }
+hilt {
+    enableAggregatingTask = true
+}
+
+

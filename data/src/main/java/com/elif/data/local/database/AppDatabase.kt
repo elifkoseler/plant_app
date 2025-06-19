@@ -5,7 +5,7 @@ import androidx.room.RoomDatabase
 import com.elif.data.local.dao.ArticleDao
 import com.elif.data.local.entity.ArticleEntity
 
-@Database(entities = [ArticleEntity::class], version = 1)
+@Database(entities = [ArticleEntity::class], version = 3)
 abstract class AppDatabase : RoomDatabase() {
     abstract fun articleDao(): ArticleDao
 }
