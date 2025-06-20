@@ -37,6 +37,7 @@ Due to time limitations, I wasn’t able to fully complete or polish all parts o
 
 A significant portion of my time was spent dealing with **Hilt setup** and **Gradle-related configuration challenges**, which were particularly time-consuming.
 
-This project reflects my understanding of these modern technologies and architectural patterns. I’ve also included a short **demo video** to showcase the current state of the app.
+This project reflects my understanding of these modern technologies and architectural patterns. I’ve also included a short 
+**demo video** (PlantApp Demo.mp4) to showcase the current state of the app.
 The goal was not perfection under the time pressure, but to show my **hands-on capabilities and technical growth** in building scalable Android applications.
 
