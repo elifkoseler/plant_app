@@ -5,15 +5,12 @@ import androidx.room.Room
 import com.elif.data.local.dao.ArticleDao
 import com.elif.data.local.database.AppDatabase
 import com.elif.data.remote.ArticleApi
-import com.elif.data.remote.RetrofitInstance
 import com.elif.data.repository.ArticleRepositoryImpl
 import com.elif.domain.repository.ArticleRepository
-import dagger.Binds
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.android.qualifiers.ApplicationContext
-import dagger.hilt.android.scopes.ActivityScoped
 import dagger.hilt.components.SingletonComponent
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
@@ -21,7 +18,7 @@ import javax.inject.Singleton
 
 @Module
 @InstallIn(SingletonComponent::class)
-object AppModule {
+class AppModule {
 
     // Database
     @Provides
@@ -52,7 +49,7 @@ object AppModule {
     }
 
     // Repository
-    @Binds
+    @Provides
     @Singleton
     fun provideArticleRepository(
         api: ArticleApi,
@@ -60,6 +57,4 @@ object AppModule {
     ): ArticleRepository {
         return ArticleRepositoryImpl(api, dao)
     }
-
-
 }
