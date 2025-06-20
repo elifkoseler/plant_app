@@ -32,12 +32,6 @@ android {
 
 }
 
-buildscript {
-    dependencies {
-        classpath(libs.hilt.android.gradle.plugin.v248)
-    }
-}
-
 dependencies {
     implementation(project(":domain"))
 
@@ -49,7 +43,6 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-    implementation(libs.hilt.android.gradle.plugin)
     implementation(libs.glide)
 
     implementation(libs.androidx.core.ktx)
@@ -58,13 +51,11 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-    implementation(libs.hilt.android)
     implementation(libs.androidx.navigation.fragment.ktx)
     implementation(libs.androidx.navigation.ui.ktx)
     implementation(libs.androidx.core.ktx.v1120)
     // Hilt core
-    implementation(libs.hilt.android.v251)
-    kapt(libs.hilt.compiler)
-    kapt(libs.androidx.hilt.compiler)
+    implementation(libs.hilt.android)
+    kapt(libs.hilt.android.compiler)
     implementation(libs.androidx.hilt.navigation.fragment)
 }

@@ -22,6 +22,7 @@
 
     <dimen name="text_12dp">12dp</dimen>
     <dimen name="text_14dp">14dp</dimen>
+    <dimen name="text_15dp">15dp</dimen>
     <dimen name="text_16dp">16dp</dimen>
     <dimen name="text_18dp">18dp</dimen>
     <dimen name="text_20dp">20dp</dimen>

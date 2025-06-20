@@ -37,6 +37,12 @@
         <item name="android:textColor">@color/title_text_color_white</item>
     </style>
 
+    <style name="RobotoTitleWhiteSmaller">
+        <item name="fontFamily">@font/robotoregular</item>
+        <item name="android:textSize">@dimen/text_15dp</item>
+        <item name="android:textColor">@color/title_text_color_white</item>
+    </style>
+
     <style name="RobotoDescription">
         <item name="fontFamily">@font/robotoregular</item>
         <item name="android:textSize">16sp</item>
